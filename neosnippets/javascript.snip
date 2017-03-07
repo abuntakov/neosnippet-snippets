@@ -205,10 +205,58 @@ options     head
 
 snippet     rptf
 abbr        React.PropTypes.func
-options     head
+options     word
    React.PropTypes.func,
 
 snippet     rptfr
 abbr        React.PropTypes.func.isRequired
-options     head
+options     word
    React.PropTypes.func.isRequired,
+
+snippet     rptn
+abbr        React.PropTypes.number
+options     word
+   React.PropTypes.number,
+
+snippet     rptnr
+abbr        React.PropTypes.number.isRequired
+options     word
+   React.PropTypes.number.isRequired,
+
+snippet     rpts
+abbr        React.PropTypes.string
+options     word
+   React.PropTypes.string,
+
+snippet     rptsr
+abbr        React.PropTypes.string.isRequired
+options     word
+   React.PropTypes.string.isRequired,
+
+snippet     rptm
+abbr        React.PropTypes.shape
+options     word
+   React.PropTypes.shape({
+      ${1:id}: ${2:React.PropTypes.string.isRequired},${0}
+   }),
+
+snippet     rptmr
+abbr        React.PropTypes.shape.isRequired
+options     word
+   React.PropTypes.shape({
+      ${1:id}: ${2:React.PropTypes.string.isRequired},${0}
+   }).isRequired,
+
+snippet     iptm
+abbr        ImmutablePropTypes.mapContains
+options     word
+   ImmutablePropTypes.mapContains({
+      ${1:id}: ${2:React.PropTypes.string.isRequired},${0}
+   }),
+
+snippet     iptmr
+abbr        ImmutablePropTypes.mapContains
+options     word
+   ImmutablePropTypes.mapContains({
+      ${1:id}: ${2:React.PropTypes.string.isRequired},${0}
+   }).isRequired,
